@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sell your house fast for cash with Northline Property Solutions. No repairs, no commissions. Get a fair cash offer fast." />
+  <title>Northline Property Solutions • We Buy Houses Cash</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img class="brand-logo" src="assets/logo.webp" alt="Northline Property Solutions LLC logo" />
+        <div>
+          <div class="brand-name">Northline Property Solutions LLC</div>
+          <div class="small" style="margin-top:2px">We buy houses for cash • Any condition • Flexible closing.</div>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+<a href="#how">How It Works</a>
+<a href="#offer">Get Offer</a>
+<a href="#faq">FAQ</a>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+        <a class="btn" href="#offer">Get a Cash Offer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card">
+          <div class="card-pad">
+            <div class="kicker">✅ No repairs • ✅ No commissions • ✅ Fast close</div>
+            <h1>Sell your house for cash — on your timeline.</h1>
+            <p class="lede">
+              We buy houses in any condition. If you want a simple sale without showings, listing fees,
+              or cleaning up, request a cash offer and we’ll walk you through the next steps.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#offer">Get Offer</a>
+              <a class="btn ghost" href="#how">How it works</a>
+              <a class="btn ghost" href="tel:+19285514898">Call 1 (928) 551-4898</a>
+            </div>
+
+            <div class="section" style="padding-top:18px">
+              <div class="grid3">
+                <div class="feature">
+                  <div class="kicker" style="display:inline-flex">Same-day review</div>
+                  <h3>Fast response</h3>
+                  <p>Tell us about the property and we’ll respond quickly with next steps.</p>
+                </div>
+                <div class="feature">
+                  <div class="kicker" style="display:inline-flex">Any condition</div>
+                  <h3>No repairs needed</h3>
+                  <p>Inherited house, tenants, code issues, dated updates — we can still buy.</p>
+                </div>
+                <div class="feature">
+                  <div class="kicker" style="display:inline-flex">Flexible close</div>
+                  <h3>You choose the date</h3>
+                  <p>Close fast if you need speed, or pick a date that works for you.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card" id="offer">
+          <div class="card-pad">
+            <h2 style="margin:0 0 6px">Request a cash offer</h2>
+            <p class="small" style="margin:0 0 14px">
+              This form is ready to connect to a CRM webhook (Zapier/Make/GHL, etc.).
+            </p>
+
+            <form class="form" id="leadForm" data-endpoint="">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" autocomplete="name" required placeholder="Jane Doe" />
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" autocomplete="tel" required placeholder="1 (928) 551-4898" />
+              </div>
+
+              <div class="field">
+                <label for="email">Email (optional)</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com" />
+              </div>
+
+              <div class="field">
+                <label for="address">Property address</label>
+                <input id="address" name="address" autocomplete="street-address" required placeholder="123 Main St" />
+              </div>
+
+              <div class="split">
+                <div class="field">
+                  <label for="reason">Reason for selling</label>
+                  <select id="reason" name="reason">
+                    <option value="Need to sell quickly">Need to sell quickly</option>
+                    <option value="Inherited property">Inherited property</option>
+                    <option value="Tired landlord / tenants">Tired landlord / tenants</option>
+                    <option value="Avoid repairs">Avoid repairs</option>
+                    <option value="Relocating">Relocating</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="timeline">Ideal timeline</label>
+                  <select id="timeline" name="timeline">
+                    <option value="ASAP (0-14 days)">ASAP (0-14 days)</option>
+                    <option value="2-4 weeks">2-4 weeks</option>
+                    <option value="1-2 months">1-2 months</option>
+                    <option value="Just exploring">Just exploring</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="notes">Anything we should know? (optional)</label>
+                <textarea id="notes" name="notes" placeholder="Condition, repairs needed, tenants, liens, etc."></textarea>
+              </div>
+
+              <button class="btn" type="submit">Get My Offer</button>
+
+              <div class="notice small">
+                By submitting, you agree we may contact you by phone/text/email about your request.
+                Message/data rates may apply. You can opt out anytime.
+              </div>
+
+              <div class="small" style="display:flex; gap:10px; flex-wrap:wrap; align-items:center">
+                <a class="btn ghost" href="tel:+19285514898">Call</a>
+                <button class="btn ghost" type="button" id="copyPhone" data-phone="+19285514898">Copy Phone</button>
+                <a class="btn ghost" href="mailto:northlinepropertysolutions@gmail.com">Email</a>
+              </div>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container split">
+        <div class="card"><div class="card-pad">
+          <h2>How it works</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="badge">1</div>
+              <div>
+                <h4>Tell us about the property</h4>
+                <p>Submit the form or call/text us. We’ll ask a few simple questions.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="badge">2</div>
+              <div>
+                <h4>Get a cash offer</h4>
+                <p>We review the details and present a clear offer with no pressure.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="badge">3</div>
+              <div>
+                <h4>Close on your timeline</h4>
+                <p>Pick a close date that works for you. We handle the paperwork.</p>
+              </div>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="card"><div class="card-pad" id="faq">
+          <h2>FAQ</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="badge">Q</div>
+              <div>
+                <h4>Do I need to clean or make repairs?</h4>
+                <p>No. We buy as-is, including properties with repairs, junk, or tenant situations.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="badge">Q</div>
+              <div>
+                <h4>Are there fees or commissions?</h4>
+                <p>No agent commissions. We aim to keep the process simple and transparent.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="badge">Q</div>
+              <div>
+                <h4>How fast can you close?</h4>
+                <p>Some deals can close quickly, while others take longer depending on title and your preference.</p>
+              </div>
+            </div>
+          </div>
+          <div class="notice small" style="margin-top:14px">
+            This site template is for marketing only and doesn’t provide legal, tax, or financial advice.
+          </div>
+        </div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-name">Northline Property Solutions LLC</div>
+        <div class="small" style="margin-top:8px">
+          © 2026 • <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
+        </div>
+        <div class="small" style="margin-top:8px">
+          Contact: <a href="tel:+19285514898">1 (928) 551-4898</a> • <a href="mailto:northlinepropertysolutions@gmail.com">northlinepropertysolutions@gmail.com</a>
+        </div>
+      </div>
+      <div class="small">
+        <strong style="color:var(--text)">Tip:</strong> To connect the form to your CRM, open <code>index.html</code> and paste your webhook URL into the form’s <code>data-endpoint</code> attribute.
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/script.js"></script>
+</body>
+</html>
